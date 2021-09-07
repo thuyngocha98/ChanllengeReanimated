@@ -1,0 +1,94 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+ios/build
+ios/archives
+
+# react-native-config codegen
+ios/tmp.xcconfig
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
+# node.js
+#
+node_modules/
+
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+# CocoaPods
+/ios/Pods/
+
+# Jest
+#
+.jest/
+
+# Coverage directory used by tools like istanbul
+coverage
+
+.vscode
+.env.*
+*.env
+.bundle
+fastlane/*.secret
+fastlane/*.secret
+fastlane/*.secret
+
+android/app/src/prod/google-services.json
+android/app/src/staging/google-services.json
+android/app/src/debug/google-services.json
+
+android/app/keystore/production.jks
+ios/Firebase/*
+android/app/keystore/staging.jks
+pc-api-5208949406592441239-87-d40d557ff7fd.json
+pdfnet_sdk_license.txt
+android/gradle.properties
+android/app/keystoreBackup/*
+android/app/debug.keystore
+android/app/src/prod/
