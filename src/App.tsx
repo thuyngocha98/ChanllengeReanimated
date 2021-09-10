@@ -5,8 +5,8 @@ import {ThemeProvider} from 'styled-components';
 import store from './store';
 import * as theme from './theme';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import Routes from '@navigation/Routes';
 
-import Routes from 'src/navigation';
 
 const App = () => {
   return (

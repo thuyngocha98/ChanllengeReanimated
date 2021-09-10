@@ -1,4 +1,4 @@
-export default {
-  HOME: 'HOME',
-  COLOR_PICKER: 'COLOR_PICKER',
+export type RootStackParamList = {
+  HOME: {} | undefined;
+  COLOR_PICKER: {} | undefined;
 };
