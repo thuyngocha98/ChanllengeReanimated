@@ -10,10 +10,16 @@ const HomeScreen: React.FC<IHomeScreen> = ({navigation}): JSX.Element => {
   const navigateToColorPicker = () => {
     navigation.navigate('COLOR_PICKER');
   };
+  const navigateToCircularProgress = () => {
+    navigation.navigate('CIRCULAR_PROGRESS');
+  };
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={navigateToColorPicker} style={styles.viewBtn}>
         <Text style={styles.txt}>Color Picker</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={navigateToCircularProgress} style={styles.viewBtn}>
+        <Text style={styles.txt}>Circular Progress</Text>
       </TouchableOpacity>
     </View>
   );

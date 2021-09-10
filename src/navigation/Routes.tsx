@@ -5,6 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import { RootStackParamList } from './routesNames';
 import HomeScreen from '@screens/HomeScreen';
 import ColorPicker from '@screens/ColorPicker';
+import CircularProgress from '@screens/CircularProgress';
 const Stack = createStackNavigator<RootStackParamList>();
 
 const MyStack = (): JSX.Element => {
@@ -14,6 +15,7 @@ const MyStack = (): JSX.Element => {
       initialRouteName={"HOME"}>
       <Stack.Screen name={"HOME"} component={HomeScreen} />
       <Stack.Screen name={"COLOR_PICKER"} component={ColorPicker} />
+      <Stack.Screen name={'CIRCULAR_PROGRESS'} component={CircularProgress} />
     </Stack.Navigator>
   );
 };
