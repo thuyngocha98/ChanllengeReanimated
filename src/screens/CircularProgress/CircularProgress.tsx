@@ -20,8 +20,6 @@ const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 const CircularProgress: React.FC = () => {
   const progress = useSharedValue(0);
 
-  useEffect(() => {}, []);
-
   const animatedProps = useAnimatedProps(() => {
     return {
       strokeDashoffset: CIRCLE_LENGTH * (1 - progress.value),

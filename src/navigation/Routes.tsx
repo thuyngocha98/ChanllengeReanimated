@@ -6,16 +6,18 @@ import { RootStackParamList } from './routesNames';
 import HomeScreen from '@screens/HomeScreen';
 import ColorPicker from '@screens/ColorPicker';
 import CircularProgress from '@screens/CircularProgress';
+import SwipeToDelete from '@screens/SwipeToDelete';
 const Stack = createStackNavigator<RootStackParamList>();
 
 const MyStack = (): JSX.Element => {
   return (
     <Stack.Navigator
-      screenOptions={{headerShown: false, gestureEnabled: false}}
+      screenOptions={{headerShown: false}}
       initialRouteName={"HOME"}>
       <Stack.Screen name={"HOME"} component={HomeScreen} />
       <Stack.Screen name={"COLOR_PICKER"} component={ColorPicker} />
       <Stack.Screen name={'CIRCULAR_PROGRESS'} component={CircularProgress} />
+      <Stack.Screen name={'SWIPE_TO_DELETE'} component={SwipeToDelete} />
     </Stack.Navigator>
   );
 };
